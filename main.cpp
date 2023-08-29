@@ -3,56 +3,195 @@
 #include <cmath>
 
 void Paisagem() {
-    // Cor de fundo como azul representando cÈu
+    // Cor de fundo como azul representando c√©u
     glClearColor(0.19f, 0.6f, 0.8f, 0.0f);
-    // Limpa todas renderizaÁ„o e deixa a janela limpa
+    // Limpa todas renderiza√ß√£o e deixa a janela limpa
     glClear(GL_COLOR_BUFFER_BIT);
     
-    // Ch„o   
+    // Ch√£o   
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
         glColor3f(0.32f, 0.49f, 0.46f); // cor do quadrado
         glVertex2f(-1.0f, -0.8f);  // Canto superior esquerdo
         glVertex2f(1.0f, -0.8f);   // Canto superior direito
         glVertex2f(1.0f, -1.0f);   // Canto inferior direito
         glVertex2f(-1.0f, -1.0f);  // Canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
-     
+    glEnd(); // encerra a defini√ß√£o
+    
+    // Detalhes chao
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.66f, 0.66f, 0.66f); // cor do quadrado
+        glVertex2f(0.01f, -0.87f); // canto superior esquerdo
+        glVertex2f(0.2f, -0.87f); // canto superior direito 
+        glVertex2f(0.2f, -0.90f); // Canto inferior direito
+        glVertex2f(0.01f, -0.90f); // canto inferior esquerdo
+    glEnd(); // encerra a defini√ß√£o
+    
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.66f, 0.66f, 0.66f); // cor do quadrado
+        glVertex2f(-0.09f, -0.87f); // canto superior esquerdo
+        glVertex2f(0.0f, -0.87f); // canto superior direito 
+        glVertex2f(0.0f, -0.90f); // Canto inferior direito
+        glVertex2f(-0.09f, -0.90f); // canto inferior esquerdo
+    glEnd(); // encerra a defini√ß√£o
+    
+     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.66f, 0.66f, 0.66f); // cor do quadrado
+        glVertex2f(-0.2f, -0.87f); // canto superior esquerdo
+        glVertex2f(-0.1f, -0.87f); // canto superior direito 
+        glVertex2f(-0.1f, -0.90f); // Canto inferior direito
+        glVertex2f(-0.2f, -0.90f); // canto inferior esquerdo
+    glEnd(); // encerra a defini√ß√£o
+
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.66f, 0.66f, 0.66f); // cor do quadrado
+        glVertex2f(-0.31f, -0.87f); // canto superior esquerdo
+        glVertex2f(-0.21f, -0.87f); // canto superior direito 
+        glVertex2f(-0.21f, -0.90f); // Canto inferior direito
+        glVertex2f(-0.31f, -0.90f); // canto inferior esquerdo
+    glEnd(); // encerra a defini√ß√£o
+
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.66f, 0.66f, 0.66f); // cor do quadrado
+        glVertex2f(-0.42f, -0.87f); // canto superior esquerdo
+        glVertex2f(-0.32f, -0.87f); // canto superior direito 
+        glVertex2f(-0.32f, -0.90f); // Canto inferior direito
+        glVertex2f(-0.42f, -0.90f); // canto inferior esquerdo
+    glEnd(); // encerra a defini√ß√£o
+
+     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.66f, 0.66f, 0.66f); // cor do quadrado
+        glVertex2f(-0.53f, -0.87f); // canto superior esquerdo
+        glVertex2f(-0.43f, -0.87f); // canto superior direito 
+        glVertex2f(-0.43f, -0.90f); // Canto inferior direito
+        glVertex2f(-0.53f, -0.90f); // canto inferior esquerdo
+    glEnd(); // encerra a defini√ß√£o
+    
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.66f, 0.66f, 0.66f); // cor do quadrado
+        glVertex2f(-0.65f, -0.87f); // canto superior esquerdo
+        glVertex2f(-0.54f, -0.87f); // canto superior direito 
+        glVertex2f(-0.54f, -0.90f); // Canto inferior direito
+        glVertex2f(-0.65f, -0.90f); // canto inferior esquerdo
+    glEnd(); // encerra a defini√ß√£o
+         
     // Montanha
     glBegin(GL_TRIANGLES); // Define as vertices para renderizar um triangulo
         glColor3f(0.80f, 0.80f, 0.80f); // cor do triangulo
         glVertex2f(0.6f, -0.8f); // esquerda
         glVertex2f(1.2f, -0.8f); // direita
         glVertex2f(0.9f, -0.6f); // topo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_TRIANGLES); // Define as vertices para renderizar um triangulo
         glColor3f(0.80f, 0.80f, 0.80f); // cor do triangulo
         glVertex2f(0.2f, -0.8f); // esquerda
         glVertex2f(0.7f, -0.8f); // direita
         glVertex2f(0.5f, -0.4f); // topo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_TRIANGLES); // Define as vertices para renderizar um triangulo
         glColor3f(0.80f, 0.80f, 0.80f); // cor do triangulo
         glVertex2f(-0.2f, -0.8f); // esquerda
         glVertex2f(0.2f, -0.8f); // direita
         glVertex2f(0.0f, -0.3f); // topo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_TRIANGLES); // Define as vertices para renderizar um triangulo
         glColor3f(0.80f, 0.80f, 0.80f); // cor do triangulo
         glVertex2f(-0.1f, -0.8f); // esquerda
         glVertex2f(0.3f, -0.8f); // direita
         glVertex2f(0.1f, -0.3f); // topo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_TRIANGLES); // Define as vertices para renderizar um triangulo
         glColor3f(0.80f, 0.80f, 0.80f); // cor do triangulo
         glVertex2f(-1.2f, -0.8f); // esquerda
         glVertex2f(-0.5f, -0.8f); // direita
         glVertex2f(-0.8f, -0.3f); // topo
-    glEnd(); // encerra a definiÁ„o
-     
+    glEnd(); // encerra a defini√ß√£o
+    
+    // Cerca
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(-0.66f, -0.75f);
+        glVertex2f(-0.65f, -0.75f);
+        glVertex2f(-0.65f,-0.85f);
+        glVertex2f(-0.66f, -0.85f);
+    glEnd(); // encerra a defini√ß√£o
+
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(-1.0f, -0.75f);
+        glVertex2f(-0.99f, -0.75f);
+        glVertex2f(-0.99f,-0.85f);
+        glVertex2f(-1.0f, -0.85f);
+    glEnd(); // encerra a defini√ß√£o
+    
+     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(-1.0f, -0.78f);
+        glVertex2f(-0.65f, -0.78f);
+        glVertex2f(-0.65f,-0.79f);
+        glVertex2f(-1.0f, -0.79f);
+    glEnd(); // encerra a defini√ß√£o
+    
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(-1.0f, -0.8f);
+        glVertex2f(-0.65f, -0.8f);
+        glVertex2f(-0.65f,-0.81f);
+        glVertex2f(-1.0f, -0.81f);
+    glEnd(); // encerra a defini√ß√£o
+    
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(-1.0f, -0.82f);
+        glVertex2f(-0.65f, -0.82f);
+        glVertex2f(-0.65f,-0.83f);
+        glVertex2f(-1.0f, -0.83f);
+    glEnd(); // encerra a defini√ß√£o
+    
+    // cerca lado direito
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(0.99f, -0.75f);
+        glVertex2f(1.0f, -0.75f);
+        glVertex2f(1.0f,-0.85f);
+        glVertex2f(0.99f, -0.85f);
+    glEnd(); // encerra a defini√ß√£o
+
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(0.51f, -0.75f);
+        glVertex2f(0.52f, -0.75f);
+        glVertex2f(0.52f,-0.85f);
+        glVertex2f(0.51f, -0.85f);
+    glEnd(); // encerra a defini√ß√£o
+    
+     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(0.51f, -0.78f);
+        glVertex2f(1.0f, -0.78f);
+        glVertex2f(1.0f,-0.79f);
+        glVertex2f(0.51f, -0.79f);
+    glEnd(); // encerra a defini√ß√£o
+    
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(0.51f, -0.8f);
+        glVertex2f(1.0f, -0.8f);
+        glVertex2f(1.0f,-0.81f);
+        glVertex2f(0.51f, -0.81f);
+    glEnd(); // encerra a defini√ß√£o
+    
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(0.51f, -0.82f);
+        glVertex2f(1.0f, -0.82f);
+        glVertex2f(1.0f,-0.83f);
+        glVertex2f(0.51f, -0.83f);
+    glEnd(); // encerra a defini√ß√£o
+    
     // Casa
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
         glColor3f(0.85f, 0.43f, 0.42f); // cor do quadrado
@@ -60,7 +199,7 @@ void Paisagem() {
         glVertex2f(-0.1f, -0.3f); // canto superior direito
         glVertex2f(-0.1f, -0.85f); // canto inferior direito
         glVertex2f(-0.65f, -0.85f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     // Telhado
     glBegin(GL_TRIANGLES); // Define as vertices para renderizar um triangulo
@@ -68,7 +207,7 @@ void Paisagem() {
         glVertex2f(-0.7f, -0.3f); // esquerda
         glVertex2f(-0.05f, -0.3f); // direita
         glVertex2f(-0.38f, 0.0f); // topo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     // Porta
      glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
@@ -77,7 +216,7 @@ void Paisagem() {
         glVertex2f(-0.45f, -0.5f); // canto superior direito
         glVertex2f(-0.45f, -0.85f); // canto inferior direito
         glVertex2f(-0.6f, -0.85f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     // Janela
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
@@ -86,8 +225,16 @@ void Paisagem() {
         glVertex2f(-0.35f, -0.4f); // canto superior direito
         glVertex2f(-0.35f, -0.62f); // canto inferior direito
         glVertex2f(-0.2f, -0.62f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
+    // Chao Carro
+    glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
+        glColor3f(0.55f, 0.34f, 0.23f); // cor do quadrado
+        glVertex2f(0.1f, -0.8f); // canto superior esquerdo
+        glVertex2f(0.5f, -0.8f); // canto superior direito
+        glVertex2f(0.55f, -1.0f); // canto inferior direito
+        glVertex2f(0.15f, -1.0f); // canto inferior esquerdo
+    glEnd(); // encerra a defini√ß√£o
     
     // Carro
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
@@ -96,7 +243,7 @@ void Paisagem() {
         glVertex2f(0.5f, -0.7f); // canto superior direito
         glVertex2f(0.5f, -0.82f); // canto inferior direito
         glVertex2f(0.1f, -0.82f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
         glColor3f(0.658824f, 0.658824f, 0.658824f); // cor do quadrado
@@ -104,7 +251,7 @@ void Paisagem() {
         glVertex2f(0.42f, -0.5f); // canto superior direito
         glVertex2f(0.47f, -0.7f); // Canto inferior direito
         glVertex2f(0.13f, -0.7f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     // Detalhes do Carro
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
@@ -113,7 +260,7 @@ void Paisagem() {
         glVertex2f(0.20f, -0.72f); // canto superior direito
         glVertex2f(0.20f, -0.85f); // Canto inferior direito
         glVertex2f(0.15f, -0.85f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
         glColor3f(1.0f, 1.0f, 1.0f); // cor do quadrado
@@ -121,7 +268,7 @@ void Paisagem() {
         glVertex2f(0.40f, -0.72f); // canto superior direito
         glVertex2f(0.40f, -0.85f); // Canto inferior direito
         glVertex2f(0.45f, -0.85f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
 
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
         glColor3f(1.0f, 1.0f, 1.0f); // cor do quadrado
@@ -129,7 +276,7 @@ void Paisagem() {
         glVertex2f(0.35f, -0.78f); // canto superior direito
         glVertex2f(0.35f, -0.80f); // Canto inferior direito
         glVertex2f(0.25f, -0.80f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
         
     // Pneus
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
@@ -138,7 +285,7 @@ void Paisagem() {
         glVertex2f(0.20f, -0.75f); // canto superior direito 
         glVertex2f(0.20f, -0.85f); // Canto inferior direito
         glVertex2f(0.15f, -0.85f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
         glColor3f(0.0f, 0.0f, 0.0f); // cor do quadrado
@@ -146,7 +293,7 @@ void Paisagem() {
         glVertex2f(0.40f, -0.75f); // canto superior direito 
         glVertex2f(0.40f, -0.85f); // Canto inferior direito
         glVertex2f(0.45f, -0.85f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     // Arvores
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
@@ -155,14 +302,14 @@ void Paisagem() {
         glVertex2f(0.9f, -0.3f); // canto superior direito
         glVertex2f(0.9f, -0.85f); // Canto inferior direito
         glVertex2f(0.8f, -0.85f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_TRIANGLES); // Define as vertices para renderizar um quadrado
         glColor3f(0.32f, 0.49f, 0.46f); // cor do triangulo
         glVertex2f(1.0f, -0.3f); // Esquerda
         glVertex2f(0.7f, -0.3f); // Direita
         glVertex2f(0.85f, -0.01f); // Topo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
      glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
         glColor3f(0.52f, 0.37f, 0.26f); // cor do quadrado
@@ -170,14 +317,14 @@ void Paisagem() {
         glVertex2f(0.75f, -0.6f); // canto superior direito
         glVertex2f(0.75f, -0.8f); // Canto inferior direito
         glVertex2f(0.7f, -0.8f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_TRIANGLES); // Define as vertices para renderizar um triangulo
         glColor3f(0.32f, 0.49f, 0.46f); // cor do triangulo
         glVertex2f(0.65f, -0.6f);  // Esquerda
         glVertex2f(0.80f, -0.6f); // Direita
         glVertex2f(0.725f, -0.5f); // Topo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
      glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
         glColor3f(0.52f, 0.37f, 0.26f); // cor do quadrado
@@ -185,14 +332,14 @@ void Paisagem() {
         glVertex2f(-0.9f, -0.2f); // canto superior direito
         glVertex2f(-0.9f, -0.85f); // Canto inferior direito
         glVertex2f(-0.8f, -0.85f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_TRIANGLES); // Define as vertices para renderizar um triangulo
         glColor3f(0.32f, 0.49f, 0.46f); // cor do triangulo
         glVertex2f(-1.0f, -0.2f); // Esquerda
         glVertex2f(-0.7f, -0.2f); // Direita
         glVertex2f(-0.85f, 0.5f); // Topo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     // Sol
     glBegin(GL_TRIANGLE_FAN); // primitiva para renderizar um poligono
@@ -207,7 +354,7 @@ void Paisagem() {
             float y = radius * sin(angle) + centerY;
             glVertex2f(x, y);
         }
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     // Nuvem
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
@@ -216,24 +363,24 @@ void Paisagem() {
         glVertex2f(-0.3f, 0.8f); // canto superior direito
         glVertex2f(-0.3f, 0.7f); // Canto inferior direito
         glVertex2f(-0.8f, 0.7f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+    glEnd(); // encerra a defini√ß√£o
     
     glBegin(GL_QUADS); // Define as vertices para renderizar um quadrado
         glColor4f(1.0f, 1.0f, 1.0f, 0.8f); // cor do quadrado
-        glVertex2f(0.1f, 0.4f); // canto superior esquerdo
-        glVertex2f(0.6f, 0.4f); // canto superior direito
-        glVertex2f(0.6f, 0.3f); // Canto inferior direito
-        glVertex2f(0.1f, 0.3f); // canto inferior esquerdo
-    glEnd(); // encerra a definiÁ„o
+        glVertex2f(0.1f, 0.5f); // canto superior esquerdo
+        glVertex2f(0.6f, 0.5f); // canto superior direito
+        glVertex2f(0.6f, 0.7f); // Canto inferior direito
+        glVertex2f(0.1f, 0.7f); // canto inferior esquerdo
+    glEnd(); // encerra a defini√ß√£o
     
-    glFlush(); // envia os comandos de renderizaÁ„o para a GPU
+    glFlush(); // envia os comandos de renderiza√ß√£o para a GPU
 }
 
 int main(int argc, char** argv) {
     glutInit(&argc, argv); // inicia a biblioteca glut
     glutInitWindowSize(800, 700); // tamanho da janela
     glutCreateWindow("Trabalho ICG - Vinicius Siess"); // nome da janela
-    glutDisplayFunc(Paisagem); // chamando a funÁ„o Paisagem para exibir na janela
-    glutMainLoop(); // loop onde as renderizaÁıes s„o tratadas
+    glutDisplayFunc(Paisagem); // chamando a fun√ß√£o Paisagem para exibir na janela
+    glutMainLoop(); // loop onde as renderiza√ß√µes s√£o tratadas
     return 0;
 }
